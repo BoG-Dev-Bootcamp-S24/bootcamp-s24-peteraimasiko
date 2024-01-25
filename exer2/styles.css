@@ -1,0 +1,247 @@
+/* Your Styles Here */
+body {
+  background-color: #403450;
+  font-size: x-large;
+  font-family: "Poppins", sans-serif ;
+  font-weight: 390;
+  transition-duration: 0.3s;
+}
+
+.body-light {
+  /* background-color: #a793c7 ; */
+  background-color: #C3B1E1;
+  transition-duration: 0.3s;
+}
+
+/* #ba87fc for light them*/
+.bar {
+    width: 75rem;
+    border: 1px solid #251c32;
+
+}
+
+.profile {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  padding-top: 50px;
+  /* border: 3px solid green; */
+}
+
+.pfp {
+  border: 2px solid #251c32;
+  width: 275px;
+  border-radius: 50%;
+}
+
+.details {
+  margin: auto;
+  width: 950px;
+  border: 3px solid #251c32;
+  background-color: #251c32;
+  padding: 1%;
+  transition-duration: 0.3s;
+}
+
+.light-details {
+  background-color: #C3B1E1;
+  margin: auto;
+  width: 950px;
+  border: 3px ridge #251c32;
+  padding: 1%;
+  transition-duration: 0.3s;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #C3B1E1;
+  transition-duration: 0.3s;
+}
+
+.light-p {
+  color: #251c32;
+  transition-duration: 0.3s;
+}
+
+.menu-buttons {
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+  padding: 3px;
+  padding-right: 10px;
+  max-width: 500px;
+  /* border: 1px solid black; */
+}
+
+button {
+  background-color: #251c32;;
+  color: #C3B1E1;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#dark-light-toggle-button {
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+}
+
+.light-button {
+  background-color: #C3B1E1;
+  color: #251c32;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: #100b16;
+}
+
+.light-button:hover {
+  background-color: #75648d;
+}
+
+.icons {
+  width: 200px;
+}
+
+.piano {
+  width: 250px;
+}
+
+.pic-gallery {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.hobby-pic-gallery {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+  width: 600px;
+  padding-top: 50px;
+  padding-right: 15px;
+}
+
+.poke {
+  width: 450px;
+  left: -600px;
+  animation: slide 1s forwards;
+}
+
+.poke2 {
+  animation: slide2 1s forwards;
+}
+
+
+@keyframes slide {
+  from {
+		transform: translateX(-60%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes slide2 {
+  from {
+		transform: translateX(60%) scaleX(-1);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0%) scaleX(-1);;
+		opacity: 1;
+	}
+}
+
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+}
+.ani-pic {
+  animation: rotation 1s infinite step-end;
+}
+
+
+.tim {
+  width: 270px;
+  border: 3px groove #251c32;
+
+}  
+.moveable-box {
+  background-color: #251c32;
+  width: 150px;
+  height: 90px;
+  display: grid;
+  grid-area: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  color: #C3B1E1;
+  justify-content: center;
+  border: 2px outset #251c32 ;
+  cursor: move;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: move;
+  position: absolute;
+  transform: translate(300%, 20%);
+}
+
+.light-moveable-box {
+  background-color: #C3B1E1;
+  width: 150px;
+  height: 90px;
+  display: grid;
+  grid-area: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  color: #251c32;
+  justify-content: center;
+  border: 2px ridge #251c32;
+  cursor: move;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: move;
+  position: absolute;
+  /* transform: translate(550%, 20%); */
+}
+  
+
+.secret-label {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+
+}
