@@ -1,5 +1,9 @@
 # Exercise 2 - Git Ready
 
+
+![image]("Learning Git Screenshot 1.png")
+
+
 ## Description
 In this exercise, bootcampers will familiarize themselves with Unix Commands, Git, and GitHub. 
 
