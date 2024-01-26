@@ -1,8 +1,8 @@
 # Exercise 2 - Git Ready
 
-
-![image]("Learning Git Screenshot 1.png")
-
+## **My Screenshots for the Git Homework**
+<img src="Learning Git Screenshot 1.png" alt="drawing" width="600"/>
+<img src="Learning Git Screenshot 2.png" alt="drawing" width="600"/>
 
 ## Description
 In this exercise, bootcampers will familiarize themselves with Unix Commands, Git, and GitHub. 
