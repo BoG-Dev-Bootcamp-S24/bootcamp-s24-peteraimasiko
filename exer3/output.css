@@ -661,18 +661,6 @@ video {
   isolation: auto;
 }
 
-.row-span-4 {
-  grid-row: span 4 / span 4;
-}
-
-.row-span-5 {
-  grid-row: span 5 / span 5;
-}
-
-.row-span-10 {
-  grid-row: span 10 / span 10;
-}
-
 .float-start {
   float: inline-start;
 }
@@ -715,14 +703,6 @@ video {
 
 .clear-none {
   clear: none;
-}
-
-.m-10 {
-  margin: 2.5rem;
-}
-
-.m-5 {
-  margin: 1.25rem;
 }
 
 .m-2 {
@@ -836,23 +816,47 @@ video {
   display: none;
 }
 
-.size-1 {
-  width: 0.25rem;
-  height: 0.25rem;
-}
-
 .size-12 {
   width: 3rem;
   height: 3rem;
 }
 
-.size-5 {
-  width: 1.25rem;
-  height: 1.25rem;
+.size-14 {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.size-full {
+  width: 100%;
+  height: 100%;
 }
 
 .h-1\/5 {
   height: 20%;
+}
+
+.h-1\/6 {
+  height: 16.666667%;
+}
+
+.h-4\/6 {
+  height: 66.666667%;
+}
+
+.max-h-3 {
+  max-height: 0.75rem;
+}
+
+.max-h-3\.5 {
+  max-height: 0.875rem;
+}
+
+.max-h-8 {
+  max-height: 2rem;
+}
+
+.max-h-40 {
+  max-height: 10rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -1701,6 +1705,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-\[112\.5px\] {
+  border-radius: 112.5px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1825,29 +1833,19 @@ video {
   border-style: none;
 }
 
-.border-pink-950 {
-  --tw-border-opacity: 1;
-  border-color: rgb(80 7 36 / var(--tw-border-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-slate-600 {
+.bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-gray-500 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2016,9 +2014,13 @@ video {
   vertical-align: super;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.font-\[\'Inter\'\] {
+  font-family: 'Inter';
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-xs {
@@ -2028,6 +2030,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .uppercase {
