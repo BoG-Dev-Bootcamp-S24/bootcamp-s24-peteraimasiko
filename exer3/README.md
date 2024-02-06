@@ -1,5 +1,11 @@
 # Exercise 3 - Frontend Practice
 
+
+
+
+https://github.com/BoG-Dev-Bootcamp-S24/bootcamp-s24-peteraimasiko/assets/117502887/03ea1798-73fb-4a7a-8f35-3fb835d14330
+
+
 ## Description
 In this exercise, bootcampers will familiarize themselves with flexbox, padding, and margins.
 
