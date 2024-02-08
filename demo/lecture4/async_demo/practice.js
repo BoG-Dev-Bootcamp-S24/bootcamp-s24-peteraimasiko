@@ -7,9 +7,13 @@ const nationalityResult = document.getElementById("nationalityResult");
 document.getElementById('nameForm').addEventListener('submit', async (event) => {
     event.preventDefault();
     const name = document.getElementById('nameInput').value;
-    console.log(name);
+  
+    // Constructing API URLs
+    //age-
     const agifyUrl = `https://api.agify.io?name=${name}`;
+    //gender-
     const genderizeUrl = `https://api.genderize.io?name=${name}`;
+    //nationality-
     const nationalizeUrl = `https://api.nationalize.io?name=${name}`;
 
 
