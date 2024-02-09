@@ -7,13 +7,9 @@ const nationalityResult = document.getElementById("nationalityResult");
 document.getElementById('nameForm').addEventListener('submit', async (event) => {
     event.preventDefault();
     const name = document.getElementById('nameInput').value;
-  
-    // Constructing API URLs
-    //age-
+    console.log(name);
     const agifyUrl = `https://api.agify.io?name=${name}`;
-    //gender-
     const genderizeUrl = `https://api.genderize.io?name=${name}`;
-    //nationality-
     const nationalizeUrl = `https://api.nationalize.io?name=${name}`;
 
 
@@ -38,9 +34,10 @@ document.getElementById('nameForm').addEventListener('submit', async (event) => 
         const mynewlist = await Promise.all(myarr);
 
         console.log(mynewlist)
+        const country = `https://restcountries.com/v3.1/alpha?codes=${mynewlist[2].country[0].country_id}`
         ageResult.innerHTML = `<p>Your age is probably ${mynewlist[0].age}.<p>`
         genderResult.innerHTML = `<p>Your gender is most likely ${mynewlist[1].gender}.<p>`
-        nationalityResult.innerHTML = `<p>You are likely from this country ${mynewlist[2].country[0].country_id}<p>`
+        nationalityResult.innerHTML = `<p>You are likely from this country ${}<p>`
     } catch (error) {
         console.error("There was an error calling the API's")
         ageResult.innerHTML = `<p>L Bozo<p>`
