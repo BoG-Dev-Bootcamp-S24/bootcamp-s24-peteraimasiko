@@ -1,3 +1,9 @@
+
+
+
+https://github.com/BoG-Dev-Bootcamp-S24/bootcamp-s24-peteraimasiko/assets/117502887/b98a56a5-5c36-4f95-92e0-2c1b78898579
+
+
 # Exercise 5 — Mini Pokédex
 ## Description
 In this project, you'll be creating a frontend that graphically displays Pokémon information (similiar to a Pokédex). To fetch all the necessary information, you'll be working with the [PokeAPI](https://pokeapi.co/docs/v2#pokemon).
