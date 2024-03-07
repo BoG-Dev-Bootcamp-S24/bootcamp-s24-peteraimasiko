@@ -4,7 +4,7 @@ export default async function handler(req, res)  {
         if (req.method === 'POST') {
             const pokemon1 = req.query.pokemon1;
             const pokemon2 = req.query.pokemon2;
-            if(!pokemon1 || pokemon2) {
+            if(!pokemon1 || !pokemon2) {
                 res.status(400).json({error : "name is required for both pokemon"});
             }
             const callURL1 = URL + pokemon1;
@@ -26,9 +26,11 @@ export default async function handler(req, res)  {
                 return res.status(200).json({winner : pokemon1 + " is the winner!"})
             } else if (poke1stats < poke2stats) {
                 return res.status(200).json({winner : pokemon2 + " is the winner!"})
-            } else {
-                return res.status(200).json({winner : "Both " + pokemon1 + " and " + pokemon2 + " tied"})
             }
+            
+            
+            return res.status(200).json({winner : "Both " + pokemon1 + " and " + pokemon2 + " tied"})
+            
         }
     } catch (error) {
         res.status(500).json({error : error.message})
