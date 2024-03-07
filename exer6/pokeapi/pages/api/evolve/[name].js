@@ -15,24 +15,44 @@ export default async function handler(req, res) {
             const response2 = await fetch(callURL2);
             const data2 = await response2.json();
             if (data2.chain.evolves_to.length === 0) {
-                res.status(200).json({"pokemonName" : name})
-                return;
+                return res.status(200).json({"pokemonName" : name})
             }
-
-
-
-            if (data2.chain.evolves_to[0].evolves_to[0].length !== 0) {
-                if (name === data2.chain.evolves_to[0].evolves_to[0].species.name) {
-                    const newdata = {"pokemonName" : name }
-                    res.status(200).json(newdata)
-                } else {
-                    const newdata = {"pokemonName" : data2.chain.evolves_to[0].species.name }
-                    res.status(200).json(newdata)
+            if (name === data2.chain.evolves_to[0].species.name) {
+                if (data2.chain.evolves_to[0].evolves_to.length !== 0) {
+                    if (name === data2.chain.evolves_to[0].evolves_to[0].species.name) {
+                        const newdata = {"pokemonName" : name }
+                        return res.status(200).json(newdata)
+                    } else {
+                        const newdata = {"pokemonName" : data2.chain.evolves_to[0].evolves_to[0].species.name }
+                        return res.status(200).json(newdata)
+                    }
                 }
             } else {
-                const newdata = {"pokemonName" : data2.chain.evolves_to[0].species.name }
-                res.status(200).json(newdata)
+                if (data2.chain.evolves_to[0].evolves_to.length !== 0) {
+                    if (name === data2.chain.evolves_to[0].evolves_to[0].species.name) {
+                        const newdata = {"pokemonName" : name }
+                        return res.status(200).json(newdata)
+                    } else {
+                        const newdata = {"pokemonName" : data2.chain.evolves_to[0].species.name }
+                        return res.status(200).json(newdata)
+                    }
+                }
             }
+
+            return res.status(200).json({pokemonName : data2.chain.evolves_to[0].species.name})
+
+
+            // if (data2.chain.evolves_to[0].evolves_to[0].length !== 0) {
+            //     if (name === data2.chain.evolves_to[0].evolves_to[0].species.name) {
+            //         const newdata = {"pokemonName" : name }
+            //         res.status(200).json(newdata)
+            //     } else {
+            //         const newdata = {"pokemonName" : data2.chain.evolves_to[0].species.name }
+            //         res.status(200).json(newdata)
+            //     }
+            // } else {
+                
+            // }
 
 
 
