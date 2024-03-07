@@ -1,5 +1,12 @@
 # Exercise 6 - Poké API
 
+
+
+https://github.com/BoG-Dev-Bootcamp-S24/bootcamp-s24-peteraimasiko/assets/117502887/6a382c42-ae7a-467d-89b8-b2e741485318
+
+
+
+
 ## Description
 In this exercise, bootcampers will familiarize themselves with Next.js, API Endpoints, and Dynamic Routing.
 
