@@ -1,5 +1,7 @@
 # Exercise 7 - Train Tickets DB
 
+https://github.com/BoG-Dev-Bootcamp-S24/bootcamp-s24-peteraimasiko/assets/117502887/91fa1361-973b-48a8-b605-eec6a87b6637
+
 ## Description
 In this exercise, bootcampers will familiarize themselves with MongoDB schemas/models, CRUD operations, and making request through API endpoints in Next.
 
