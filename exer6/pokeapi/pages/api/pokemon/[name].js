@@ -4,7 +4,6 @@ export default async function handler(req, res) {
     const url = "https://pokeapi.co/api/v2/pokemon/";
     try {
         const name = req.query.name;
-        console.log(name)
         if (!name || name === "") {
             res.status(400).json({error : "Pokemon name is required"})
         }
